@@ -48,7 +48,7 @@ header nav a:hover{
 
 #filmeAtual{
     width: 100%;
-    height: calc(100vh - 45px);
+    height: 500px;
     background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../img/hp7-2-back.jpg") no-repeat;
     background-size: cover;
 }
@@ -61,11 +61,12 @@ header nav a:hover{
 }
 
 #filmeAtual .container #titulo{
-    font-size: 50pt;
+    font-size: 30pt;
+    max-width: 450px;
 }
 
 #filmeAtual .container #sinopse{
-    font-size: 20pt;
+    font-size: 15pt;
 }
 
 .btn-play-plus{
@@ -106,4 +107,9 @@ header nav a:hover{
 #minhaLista .container img{
     margin: 10px 5px;
     height: 400px;
+    cursor: pointer;
+}
+
+#minhaLista h3{
+    margin: 20px 10px 0 10px;
 }
