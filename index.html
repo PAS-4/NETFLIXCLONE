@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Netflix Clone</title>
 </head>
@@ -21,8 +23,9 @@
     </header>
     <main id="filmeAtual">
         <div class="container">
-            <h2 id="titulo">Título do Filme</h2>
-            <p id="sinopse">Descrição do Filme</p>
+            <h2 id="titulo">Harry Potter</h2>
+            <h3 id="subtitulo">Já recebeu a coruja com sua carta de Hogwarts?</h3>
+            <p id="sinopse">Então embarque no Hogwarts Express - Plataforma 9 3/4</p>
             <div class="btn-play-plus">
                 <button>
                     <i class="fas fa-play"></i>
@@ -38,18 +41,20 @@
 
     <section id="minhaLista">
         <h3>Favoritos</h3>
-        <div class="container">
-            <img onmouseover="mudaInfoFilme(1)" src="/img/hp1.jpg" alt="Harry Potter e a Pedra Filosofal">
-            <img onmouseover="mudaInfoFilme(2)" src="/img/hp2.jpg" alt="Harry Potter e a Câmara Secreta">
-            <img onmouseover="mudaInfoFilme(3)" src="/img/hp3.jpg" alt="Harry Potter e o Prisioneiro de Azkaban">
-            <img onmouseover="mudaInfoFilme(4)" src="/img/hp4.jpg" alt="Harry Potter e o Cálice de Fogo">
-            <img onmouseover="mudaInfoFilme(5)" src="/img/hp5.jpg" alt="Harry Potter e a Ordem da Fênix">
-            <img onmouseover="mudaInfoFilme(6)" src="/img/hp6.jpg" alt="Harry Potter e o Enigma do Príncipe">
-            <img onmouseover="mudaInfoFilme(7)" src="/img/hp7-1.jpg" alt="Harry Potter e as Relíquias da Morte - Parte 1">
-            <img onmouseover="mudaInfoFilme(8)" src="/img/hp7-2.jpg" alt="Harry Potter e as Relíquias da Morte - Parte 2">
+        <div class="carousel">
+            <div><img onmouseover="mudaInfoFilme(1)" onmouseout="infoDefout()" src="/img/hp1.jpg" alt="Harry Potter e a Pedra Filosofal"></div>
+            <div><img onmouseover="mudaInfoFilme(2)" onmouseout="infoDefout()" src="/img/hp2.jpg" alt="Harry Potter e a Câmara Secreta"></div>
+            <div><img onmouseover="mudaInfoFilme(3)" onmouseout="infoDefout()" src="/img/hp3.jpg" alt="Harry Potter e o Prisioneiro de Azkaban"></div>
+            <div><img onmouseover="mudaInfoFilme(4)" onmouseout="infoDefout()" src="/img/hp4.jpg" alt="Harry Potter e o Cálice de Fogo"></div>
+            <div><img onmouseover="mudaInfoFilme(5)" onmouseout="infoDefout()" src="/img/hp5.jpg" alt="Harry Potter e a Ordem da Fênix"></div>
+            <div><img onmouseover="mudaInfoFilme(6)" onmouseout="infoDefout()" src="/img/hp6.jpg" alt="Harry Potter e o Enigma do Príncipe"></div>
+            <div><img onmouseover="mudaInfoFilme(7)" onmouseout="infoDefout()" src="/img/hp7-1.jpg" alt="Harry Potter e as Relíquias da Morte - Parte 1"></div>
+            <div><img onmouseover="mudaInfoFilme(8)" onmouseout="infoDefout()" src="/img/hp7-2.jpg" alt="Harry Potter e as Relíquias da Morte - Parte 2"></div>
         </div>
     </section>
-
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
     <script src="https://kit.fontawesome.com/4d3329f822.js" crossorigin="anonymous"></script>
     <script src="./js/func.js"></script>
 </body>
