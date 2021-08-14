@@ -49,7 +49,7 @@ header nav a:hover{
 #filmeAtual{
     width: 100%;
     height: 500px;
-    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../img/defoutBack.jpg") no-repeat;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../img/defautBack.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -102,17 +102,12 @@ header nav a:hover{
 }
 
 #minhaLista h3{
-    margin: 20px 10px 0 40px;
-}
-
-#minhaLista .carousel{
-    width: 95%;
-    margin: auto;
+    margin: 20px 10px 0 20px;
 }
 
 #minhaLista .carousel img{
-    margin: 10px 5px;
-    width: 290px;
+    margin: 10px auto;
+    width: 95%;
     height: 400px;
     cursor: pointer;
 }
