@@ -1,10 +1,25 @@
-$('.carousel').slick({
-    dots: false,
-    infinite: false,
-    speed: 800,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-});
+$('.owl-carousel').owlCarousel({
+    loop: false,
+    margin: 10,
+    nav: true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        725:{
+            items:3
+        },
+        850:{
+            items:4
+        },
+        1000:{
+            items:5
+        },
+    }
+})
 
 const fundoFilmeAtual = document.querySelector('#filmeAtual')
 const titulo = document.querySelector('#titulo')
